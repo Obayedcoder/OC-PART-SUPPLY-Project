@@ -495,34 +495,30 @@ nav.primary a.active{color:var(--amber-dark);}
   position:relative;
   width:34px;height:34px;
   border-radius:50%;
-  background:rgba(255,255,255,0.95);
+  background:rgba(255,255,255,0.3);
   display:flex;align-items:center;justify-content:center;
   color:var(--navy-950);
   font-weight:800;
   font-size:17px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.35), 0 0 0 0 rgba(255,255,255,0.3);
+  box-shadow:0 6px 16px rgba(0,0,0,0.35);
   cursor:pointer;
   transition:background .18s ease;
-  animation:hotspot-glow 2.8s ease-in-out infinite;
 }
-/* two rings staggered half a cycle apart so a new one always starts as the
-   last is fading — a continuous sonar-style echo rather than a single pulse
-   that gaps out; purely decorative, so it never touches the image beneath */
-.hotspot::before,
-.hotspot::after{
+.hotspot svg{opacity:.3;}
+/* same radar/sonar ping used for the "Ships nationwide" dot — a solid,
+   fading disc that scales outward, no border ring */
+.hotspot::before{
   content:"";
-  position:absolute;inset:-8px;
+  position:absolute;inset:0;
   border-radius:50%;
+  background:transparent;
   border:1.5px solid rgba(255,255,255,0.9);
-  animation:pulse 3s cubic-bezier(.22,.61,.36,1) infinite;
+  animation:hotspot-pulse 1.8s cubic-bezier(0,0,0.2,1) infinite;
   pointer-events:none;
 }
-.hotspot::after{animation-delay:1.5s;}
-.hotspot.h2::before{animation-delay:.75s;}
-.hotspot.h2::after{animation-delay:2.25s;}
-@keyframes pulse{
-  0%{transform:scale(0.85);opacity:.7;}
-  100%{transform:scale(1.8);opacity:0;}
+.hotspot.h2::before{animation-delay:.6s;}
+@keyframes hotspot-pulse{
+  75%,100%{transform:scale(2.6);opacity:0;}
 }
 @keyframes hotspot-glow{
   0%,100%{box-shadow:0 6px 16px rgba(0,0,0,0.35), 0 0 0 0 rgba(255,255,255,0.25);}
@@ -1306,7 +1302,7 @@ footer{background:var(--navy-950);color:#aab2cc;padding:64px 0 26px;}
 
 .chat-panel{
   width:392px;max-width:calc(100vw - 40px);height:560px;max-height:calc(100vh - 120px);
-  background:rgba(255,255,255,0.72);
+  background:rgba(255,255,255,0.9);
   backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);
   border:1px solid rgba(255,255,255,0.55);
   border-radius:22px;box-shadow:var(--shadow-card-hover);
