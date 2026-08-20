@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OC Part Supply — Crafted for Collectors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <span><b>Free shipping over $75.</b>&nbsp;Made to order, ships in 2–3 days.</span>
+    </div>
+    <div class="topbar-right">
+      <span>Ships to <b>USA nationwide</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap navrow">
+    <a class="logo" href="#">
+      <img src="/assets/logo.png" alt="OC Part Supply logo" class="logo-mark">
+      <span>OC Part <span class="brand-accent">Supply</span><small>--CRAFTED FOR COLLECTORS--</small></span>
+    </a>
+    <div class="search-field search-field--dept">
+      <button type="button" class="dept-select">
+        All Departments
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <input type="text" placeholder="Search 500+ products and departments…">
+      <button aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+      <span class="cart-label">Cart</span>
+      <button class="icon-btn menu-btn" id="mmOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="wrap searchrow">
+    <div class="search-field">
+      <input type="text" placeholder="Search products…">
+      <button aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="wrap navrow2">
+    <button type="button" class="all-dept-btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      All Departments
+    </button>
+    <nav class="primary">
+      <a href="#" class="active"><span class="navdot"></span>Home</a>
+      <a href="#departments">Shop All</a>
+      <a href="#featured">Featured Finds</a>
+      <a href="#bestsellers">Best Sellers</a>
+      <a href="#saga">Star Trek Collection</a>
+      <a href="#">About Us</a>
+      <a href="#">FAQs</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <a class="btn btn-track" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Track Order
+    </a>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU DRAWER ============ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-panel">
+    <div class="mm-top">
+      <button class="mm-close" id="mmClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <a class="mm-logo" href="#">
+        <img src="/assets/logo.png" alt="OC Part Supply logo" class="mm-logo-mark">
+        <span class="mm-wordmark">OC Part Supply</span>
+      </a>
+      <div class="mm-icons">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-4 5-6 8-6s6.2 2 8 6"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mm-nav">
+      <a class="mm-link" href="#">Home</a>
+
+      <button type="button" class="mm-link mm-expand" id="mmShopToggle" aria-expanded="false" aria-controls="mmShopSubmenu">
+        Shop
+        <svg class="mm-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="mm-submenu" id="mmShopSubmenu" hidden>
+        <!-- TODO: replace with the real Shop submenu items once provided -->
+        <a class="mm-sublink" href="#departments">Light Switch Plates</a>
+        <a class="mm-sublink" href="#departments">Name Plaques</a>
+        <a class="mm-sublink" href="#departments">Badge Reels</a>
+        <a class="mm-sublink" href="#departments">Medal Displays / Racks</a>
+        <a class="mm-sublink" href="#departments">Tools &amp; Storage</a>
+        <a class="mm-sublink" href="#departments">Clocks</a>
+        <a class="mm-sublink" href="#departments">Saber Stands</a>
+        <a class="mm-sublink" href="#departments">Ships &amp; Figurines</a>
+      </div>
+
+      <a class="mm-link" href="#featured">Featured Finds</a>
+      <a class="mm-link" href="#bestsellers">Best Sellers</a>
+      <a class="mm-link" href="#saga">Star Trek Collection</a>
+      <a class="mm-link" href="#">About Us</a>
+      <a class="mm-link" href="#">FAQs</a>
+      <a class="mm-link" href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="mm-footer">
+      <a class="mm-help-btn" href="#contact">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Expert help
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-stack">
+
+    <div class="hero-media">
+      <picture>
+        <source media="(max-width: 680px)" srcset="/assets/etert.webp">
+        <img src="/assets/star-trek-collection.png" alt="Star Trek Collection — LCARS switch plates, badge reels and more" class="hero-photo">
+      </picture>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="hotspot-wrap h1" tabindex="0" style="top:45%;left:54%;">
+      <div class="hotspot">+</div>
+      <div class="hotspot-card" style="top:38px;left:0;">
+        <div class="hc-top">
+          <div class="hc-thumb" style="background:linear-gradient(155deg,#22315a,#0d1730);">
+            <svg viewBox="0 0 100 100" fill="none"><rect x="20" y="14" width="60" height="72" rx="8" fill="#e8a33d"/><rect x="30" y="28" width="16" height="8" fill="#0c141f"/><rect x="54" y="28" width="16" height="8" fill="#0c141f"/><rect x="30" y="44" width="40" height="6" fill="#0c141f"/><rect x="30" y="56" width="40" height="6" fill="#0c141f"/></svg>
+          </div>
+          <div>
+            <div class="hc-cat">Switch Plates</div>
+            <div class="hc-name">LCARS Light Switch Cover</div>
+          </div>
+        </div>
+        <div class="hc-price">$18.00</div>
+        <a class="hc-btn" href="#featured">Shop now</a>
+      </div>
+    </div>
+    <div class="hotspot-wrap h2" tabindex="0" style="top:60%;left:63%;">
+      <div class="hotspot">+</div>
+      <div class="hotspot-card" style="top:38px;right:0;">
+        <div class="hc-top">
+          <div class="hc-thumb" style="background:linear-gradient(155deg,#1f3a34,#0e1d1a);">
+            <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="34" r="17" fill="none" stroke="#e8a33d" stroke-width="4.5"/><rect x="46" y="48" width="8" height="36" rx="3" fill="#e8a33d"/></svg>
+          </div>
+          <div>
+            <div class="hc-cat">Badge Reels</div>
+            <div class="hc-name">ST TNG/ToS Badge Reel</div>
+          </div>
+        </div>
+        <div class="hc-price">$12.99</div>
+        <a class="hc-btn" href="#featured">Shop now</a>
+      </div>
+    </div>
+
+    <div class="hero-copy-wrap">
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">★ Handmade to order — since day one</span>
+          <h1>Custom Made. <em>Crafted for Collectors.</em> All in One Shop.</h1>
+          <p class="sub">Light switch plates, badge reels, name plaques and more — designed for the fandoms and hobbies you're loyal to, made to order by a small team who sweats the details.</p>
+          <div class="hero-cta">
+            <a class="btn btn-fill" href="#featured">Shop Featured Finds</a>
+            <a class="btn btn-outline" href="#departments">Browse Collections</a>
+          </div>
+          <div class="hero-chips">
+            <div class="chip"><b>13</b>collections</div>
+            <div class="chip"><b>Made to order</b>ships in 2–3 days</div>
+            <div class="chip"><b>Expert help</b>real humans, real fast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="float-card">
+      <span class="dot"></span>
+      <div>
+        <b>Ships nationwide</b>
+        <span>Free shipping on orders over $75.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Handmade to order</span>
+      <span>Free shipping over $75</span>
+      <span>Hassle-free returns</span>
+      <span>SSL secured checkout</span>
+      <span>Expert help &amp; advice</span>
+      <span>Handmade to order</span>
+      <span>Free shipping over $75</span>
+      <span>Hassle-free returns</span>
+      <span>SSL secured checkout</span>
+      <span>Expert help &amp; advice</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPARTMENTS ============ -->
+<section id="departments">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="zone-tag">ZONE 01 · SHOP BY COLLECTION</span>
+        <h2>Find your fandom, fast</h2>
+      </div>
+      <a class="sec-link" href="#">View all collections →</a>
+    </div>
+
+    <div class="dept-top">
+
+      <div class="dept-card featured">
+        <div class="dept-art">
+          <img src="/assets/light_switch_plate_high_quality.webp" alt="Custom Star Wars droid light switch plate">
+        </div>
+        <div class="dept-body">
+          <span class="eyebrow">MOST POPULAR</span>
+          <h4>Light Switch Plates <span class="arrow">→</span></h4>
+        </div>
+      </div>
+
+      <div class="dept-medium-col">
+        <div class="dept-card">
+          <div class="dept-art">
+            <img src="/assets/name_plaque_high_quality.webp" alt="Custom Star Trek LCARS name plaque">
+          </div>
+          <div class="dept-body">
+            <span class="eyebrow">CUSTOMIZABLE</span>
+            <h4>Name Plaques <span class="arrow">→</span></h4>
+          </div>
+        </div>
+
+        <div class="dept-card">
+          <div class="dept-art">
+            <img src="/assets/564bn.webp" alt="Star Trek badge reel collection">
+          </div>
+          <div class="dept-body">
+            <span class="eyebrow">EVERYDAY CARRY</span>
+            <h4>Badge Reels <span class="arrow">→</span></h4>
+          </div>
+        </div>
+
+        <div class="dept-card">
+          <div class="dept-art">
+            <img src="/assets/56565f.webp" alt="Custom medal display rack mounted on a wall">
+          </div>
+          <div class="dept-body">
+            <span class="eyebrow">SHOW YOUR WINS</span>
+            <h4>Medal Displays / Racks <span class="arrow">→</span></h4>
+          </div>
+        </div>
+
+        <div class="dept-card">
+          <div class="dept-art">
+            <img src="/assets/red_tool_hook.webp" alt="Red storage rack tool hook">
+          </div>
+          <div class="dept-body">
+            <span class="eyebrow">WORKSHOP READY</span>
+            <h4>Tools &amp; Storage <span class="arrow">→</span></h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="dept-bottom">
+
+      <div class="dept-card">
+        <div class="dept-art">
+          <img src="/assets/freeze_dryer_trays.webp" alt="Freeze dryer trays">
+        </div>
+        <div class="dept-body">
+          <span class="eyebrow">HOME MAKER</span>
+          <h4>Freeze Dryers <span class="arrow">→</span></h4>
+        </div>
+      </div>
+
+      <div class="dept-card">
+        <div class="dept-art">
+          <img src="/assets/nb.webp" alt="Custom themed clocks on a shelf">
+        </div>
+        <div class="dept-body">
+          <span class="eyebrow">TIME MEETS FANDOM</span>
+          <h4>Clocks <span class="arrow">→</span></h4>
+        </div>
+      </div>
+
+      <div class="dept-card">
+        <div class="dept-art">
+          <img src="/assets/saber_stand.webp" alt="Lightsaber display stand">
+        </div>
+        <div class="dept-body">
+          <span class="eyebrow">DISPLAY STANDS</span>
+          <h4>Saber Stands <span class="arrow">→</span></h4>
+        </div>
+      </div>
+
+      <div class="dept-card">
+        <div class="dept-art">
+          <img src="/assets/ships_and_figurines.webp" alt="Sci-fi ship model figurine">
+        </div>
+        <div class="dept-body">
+          <span class="eyebrow">SCI-FI DISPLAYS</span>
+          <h4>Ships &amp; Figurines <span class="arrow">→</span></h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED FINDS CAROUSEL ============ -->
+<section id="featured" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="zone-tag">ZONE 02 · FEATURED FINDS</span>
+        <h2>Handpicked by the workshop</h2>
+      </div>
+      <div class="carousel-nav">
+        <button class="nav-circle" onclick="scrollCarousel(-1)" aria-label="Previous">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="nav-circle" onclick="scrollCarousel(1)" aria-label="Next">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="carousel-track" id="carousel">
+
+      <div class="product-card">
+        <div class="product-art">
+          <span class="badge">NEW</span>
+          <img src="/assets/light_switch_plate_high_quality.webp" alt="Star Wars Empire light switch cover plate">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>Star Wars Inspired — Light Switch Cover Plate, Empire</h4>
+          <div class="stars">★★★★★ (31)</div>
+          <div class="price">From $14.00</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-art">
+          <img src="/assets/name_plaque_high_quality.webp" alt="Star Trek LCARS name plate desktop plaque">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>ST TNG/TOS — Name Plate Desktop Plaque, Personalized</h4>
+          <div class="stars">★★★★★ (41)</div>
+          <div class="price">From $25.00</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-art">
+          <span class="badge">NEW</span>
+          <img src="/assets/lcars_light_switch_plate_high_quality.webp" alt="LCARS light switch cover plate, high detail">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>LCARS — Light Switch Cover Plate, High Detail</h4>
+          <div class="stars">No reviews yet</div>
+          <div class="price">From $18.00</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-art">
+          <img src="/assets/star_trek_badge_reel_high_quality.webp" alt="Star Trek communicator badge reel, retractable ID holder">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>ST TNG/ToS — Badge Reel, Retractable ID Holder</h4>
+          <div class="stars">★★★★★ (9)</div>
+          <div class="price">From $12.99</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-art">
+          <span class="badge pick">POPULAR</span>
+          <img src="/assets/droid_access_panel_high_quality.webp" alt="Star Wars droid access panel switch plate">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>Star Wars Inspired — Droid Access Panel Switch Plate</h4>
+          <div class="stars">★★★★★ (14)</div>
+          <div class="price">From $30.00</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-art">
+          <img src="/assets/husky_compatible_storage_rack_hook_high_quality.webp" alt="Husky compatible storage rack hook">
+        </div>
+        <div class="product-body">
+          <span class="brand">OC Part Supply</span>
+          <h4>Husky Compatible Storage Rack Hooks — Front</h4>
+          <div class="stars">★★★★★ (6)</div>
+          <div class="price">From $19.00</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAR TREK SAGA BANNER ============ -->
+<section id="saga">
+  <div class="wrap">
+    <div class="saga-banner">
+      <img src="/assets/star-trek-collection.png" alt="Star Trek Collection — LCARS switch plates, badge reels, name plaques and more" class="saga-photo">
+      <div class="saga-scrim"></div>
+      <div class="saga-copy">
+        <span class="eyebrow">FAN-FIRST DESIGN</span>
+        <h3>The Star Trek Inspired Collection</h3>
+        <p>Handcrafted badge reels, LCARS switch plates, name plaques and clocks — built for fans who notice the details.</p>
+        <a class="btn btn-fill" href="#">Shop the Collection</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEST SELLERS ============ -->
+<section id="bestsellers" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="zone-tag">ZONE 04 · CUSTOMER FAVORITES</span>
+        <h2>Best sellers</h2>
+      </div>
+      <a class="sec-link" href="#">View all popular picks →</a>
+    </div>
+
+    <div class="bestsellers">
+      <div class="bs-hero">
+        <span class="pick-badge">🏆 Popular Pick</span>
+        <div class="bs-hero-art">
+          <img src="/assets/light_switch_plate_high_quality.webp" alt="Star Wars Empire light switch cover plate">
+        </div>
+        <div class="bs-hero-info">
+          <span class="brand">OC PART SUPPLY</span>
+          <h4>Star Wars Inspired — Light Switch Cover Plate, Empire</h4>
+          <div class="price">From $14.00</div>
+        </div>
+      </div>
+
+      <div class="bs-list">
+        <div class="bs-row">
+          <div class="bs-num">2</div>
+          <div class="bs-thumb"><img src="/assets/name_plaque_high_quality.webp" alt="Star Trek LCARS name plate desktop plaque"></div>
+          <div class="bs-info">
+            <span class="brand">OC PART SUPPLY</span>
+            <h5>ST TNG/TOS — Name Plate Desktop Plaque</h5>
+          </div>
+          <div class="bs-price">$25.00</div>
+        </div>
+        <div class="bs-row">
+          <div class="bs-num">3</div>
+          <div class="bs-thumb"><img src="/assets/star_trek_badge_reel_high_quality.webp" alt="Star Trek communicator badge reel"></div>
+          <div class="bs-info">
+            <span class="brand">OC PART SUPPLY</span>
+            <h5>ST TNG/ToS — Badge Reel, ID Holder</h5>
+          </div>
+          <div class="bs-price">$12.99</div>
+        </div>
+        <div class="bs-row">
+          <div class="bs-num">4</div>
+          <div class="bs-thumb"><img src="/assets/droid_access_panel_high_quality.webp" alt="Star Wars droid access panel switch plate"></div>
+          <div class="bs-info">
+            <span class="brand">OC PART SUPPLY</span>
+            <h5>Droid Access Panel Switch Plate</h5>
+          </div>
+          <div class="bs-price">$30.00</div>
+        </div>
+        <div class="bs-row">
+          <div class="bs-num">5</div>
+          <div class="bs-thumb"><img src="/assets/milwaukee_m12_battery_carrier_high_quality.webp" alt="Milwaukee M12 battery carrier"></div>
+          <div class="bs-info">
+            <span class="brand">OC PART SUPPLY</span>
+            <h5>Milwaukee M12 Battery Carrier</h5>
+          </div>
+          <div class="bs-price">$39.99</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCOUNT / MEMBER PANEL ============ -->
+<section>
+  <div class="wrap">
+    <div class="account-panel">
+      <div>
+        <span class="eyebrow">JOIN THE WORKSHOP</span>
+        <h3>Create a free account to <em>shop smarter.</em></h3>
+        <p>Track custom orders, get early access to new drops, and breeze through checkout next time.</p>
+        <a class="btn btn-fill" href="#">Create free account</a>
+      </div>
+      <div class="benefits">
+        <div class="benefit">
+          <span class="n">01</span>
+          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <b>Order tracking &amp; updates</b>
+        </div>
+        <div class="benefit">
+          <span class="n">02</span>
+          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+          <b>Early access to new drops</b>
+        </div>
+        <div class="benefit">
+          <span class="n">03</span>
+          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
+          <b>Faster checkout</b>
+        </div>
+        <div class="benefit">
+          <span class="n">04</span>
+          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg></div>
+          <b>No account fee, ever</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY SHOP WITH US ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="zone-tag">ZONE 10 · TRUST</span>
+        <h2>Why shop with us</h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+        <h5>Made to order</h5>
+        <p>Every piece is printed and finished by hand once you order — not pulled from a warehouse shelf.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></div>
+        <h5>Hassle-free returns</h5>
+        <p>Not the right fit? Send it back — no interrogation, no restocking games.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h5>Real expert help</h5>
+        <p>Questions about fit, finish, or a custom order? A real person answers, fast.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+        <h5>Ships nationwide</h5>
+        <p>Free shipping over $75, tracked door to door across the US.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="newsletter">
+      <div>
+        <span class="eyebrow">STAY UPDATED</span>
+        <h3>Sign up and get 10% off</h3>
+        <p>News, new drops, and workshop stories — no spam, unsubscribe anytime.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip">
+  <div class="trust-track">
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><b>Track your order</b><span>Real-time updates &amp; tracking</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+      <div><b>Nationwide shipping</b><span>Ships across the USA</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <div><b>Fair everyday pricing</b><span>Deals across every collection</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><b>Track your order</b><span>Real-time updates &amp; tracking</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+      <div><b>Nationwide shipping</b><span>Ships across the USA</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <div><b>Fair everyday pricing</b><span>Deals across every collection</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="/assets/logo.png" alt="OC Part Supply logo" class="logo-mark logo-mark--sm">
+          OC Part <span class="brand-accent">Supply</span>
+        </div>
+        <p>Custom, handcrafted designs made just for you — light switch plates, badge reels, plaques and more, built for the fandoms and hobbies you love.</p>
+        <div class="pay-icons">
+          <span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Shop Pay</span><span>Apple Pay</span>
+        </div>
+      </div>
+      <div>
+        <h5>Main Menu</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#departments">Collections</a></li>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Our Policy</h5>
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p style="margin-bottom:14px;">Sign up for exclusive offers, workshop stories, and new drops.</p>
+        <form class="newsletter-form" onsubmit="return false;" style="flex-wrap:nowrap;">
+          <input type="email" placeholder="Email" style="width:100%;" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OC Part Supply. All rights reserved.</span>
+      <span>Developed by <a href="https://etroybd.com" target="_blank" rel="noopener" style="text-decoration:underline;">Etroy Business Solution</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
